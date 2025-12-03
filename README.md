@@ -4,7 +4,13 @@
 
 `go run main.go -in ip_port_list`
 
-If you want, you can have the output in a file:
+You cna change the timeout (default=1sec):
+
+`go run main.go -ip 127.0.0.1 -port 3306 -timeout 3`
+
+`go run main.go -in ip_port_list -timeout=2`
+
+Or, if you want, you can have the output in a file:
 
 `go run main.go -ip 127.0.0.1 -port 3306 -out scan.jsonl`
 
